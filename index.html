@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>구름줍줍</title>
+<meta name="description" content="하늘에서 발견한 구름을 찍고, 이름 붙이고, 나만의 하늘에 모으는 앱.">
+<meta property="og:title" content="구름줍줍">
+<meta property="og:description" content="오늘의 하늘에서, 구름 하나 주워요.">
+<meta property="og:image" content="icon.png">
+<link rel="icon" href="icon-small.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+<style>
+  :root { --bg:#eaf3ff; --card:#fdfcf9; --ink:#2b3a52; --dim:#6b7f9e; --line:#cfe0f5; --sky:#5c9ee8; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; color: var(--ink);
+    background: linear-gradient(#e2efff 0%, #eaf3ff 45%, #fdf6ee 100%); background-attachment: fixed;
+    font: 400 16px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", system-ui, sans-serif; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  a { color: #3d82cf; }
+  .round { font-family: "Jua", -apple-system, sans-serif; font-weight: 400; }
+  header { text-align: center; padding: 56px 0 20px; }
+  header img.app { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 8px 0 var(--line); }
+  h1 { font-size: 42px; margin: 22px 0 6px; }
+  .tagline { font-size: 19px; margin: 8px 0 0; color: var(--sky); }
+  .store { margin: 22px 0 0; }
+  .store img { height: 54px; width: auto; vertical-align: middle; }
+  .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 32px 0; }
+  .shots img { width: 100%; border-radius: 18px; box-shadow: 0 6px 0 var(--line); display: block; }
+  section { background: var(--card); border: 2px solid var(--line); border-radius: 24px; padding: 22px 22px 12px; margin: 0 0 28px; }
+  h2 { font-size: 23px; margin: 0 0 14px; color: var(--sky); }
+  h3 { font-size: 16px; margin: 18px 0 4px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 20px; }
+  .mail { font-size: 18px; }
+  footer { color: var(--dim); font-size: 14px; border-top: 1px solid var(--line); padding: 20px 0 48px; text-align: center; }
+  @media (max-width: 640px) { h1 { font-size: 32px; } .shots { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="app" src="icon.png" alt="구름줍줍 아이콘">
+    <h1 class="round">구름줍줍</h1>
+    <p class="tagline round">오늘의 하늘에서, 구름 하나 주워요.</p>
+  </header>
+
+  <div class="shots">
+    <img src="shots/1.png" alt="내 구름장">
+    <img src="shots/2.png" alt="나만의 하늘">
+    <img src="shots/3.png" alt="구름 카드">
+    <img src="shots/4.png" alt="사진 다듬기">
+  </div>
+
+  <section>
+    <h2 class="round">지원</h2>
+    <p>하늘을 올려다보다 마음에 드는 구름을 만나면 찍어서 이름을 붙여요. 모은 구름은 액자처럼 걸린 <strong>내 구름장</strong>에 쌓이고, <strong>나만의 하늘</strong>에서는 지금 시각의 하늘 위로 떠올라요. 원하는 자리에 옮기고 기울여 나만의 하늘을 만들 수 있어요.</p>
+
+    <h3 class="round">문의</h3>
+    <p class="mail"><a href="mailto:cloov2026@gmail.com">cloov2026@gmail.com</a></p>
+    <p>버그 제보 시 기기 모델과 iOS 버전을 함께 보내 주시면 빠르게 확인할 수 있습니다.</p>
+
+    <h3 class="round">자주 묻는 질문</h3>
+    <ul>
+      <li><strong>모은 구름은 어디에 저장되나요?</strong> 기기 안에만 저장됩니다. 계정도 서버도 없습니다. 앱을 삭제하면 구름도 함께 사라지니, 소중한 사진은 공유 버튼으로 따로 저장해 두세요.</li>
+      <li><strong>알림은 어떤 건가요?</strong> 두 가지입니다. 구름을 볼 수 있는 시간대 중 하루 한 번 무작위로 오는 <strong>랜덤 알림</strong>, 그리고 일몰 15분 전에 오는 <strong>노을 알림</strong>입니다. 설정에서 각각 켜고 끌 수 있어요.</li>
+      <li><strong>위치는 왜 필요한가요?</strong> 노을 알림을 켤 때만 한 번 묻습니다. 일몰 시각을 계산하는 데만 쓰고, 약 1km 단위로 뭉뚱그려 기기에 보관하며 밖으로 보내지 않습니다. 거부해도 노을 알림만 못 쓰고 나머지는 그대로 동작합니다.</li>
+      <li><strong>앨범에 있는 사진도 넣을 수 있나요?</strong> 네. 구름 줍기 버튼을 길게 누르면 앨범에서 가져올 수 있고, 가져온 사진은 먼저 다듬기 화면에서 구도를 맞춘 뒤 카드가 됩니다.</li>
+      <li><strong>사진을 다듬으면 원본이 바뀌나요?</strong> 아닙니다. 자르기·회전·밝기는 따로 기록되고 원본은 그대로 남아, 언제든 처음으로 되돌릴 수 있습니다.</li>
+      <li><strong>결제나 광고가 있나요?</strong> 없습니다. 인터넷 연결도 필요 없습니다.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p><a href="privacy.html">개인정보처리방침</a></p>
+    <p>© 2026 구름줍줍</p>
+  </footer>
+</div>
+</body>
+</html>
