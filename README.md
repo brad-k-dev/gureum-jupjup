@@ -4,6 +4,6 @@
 
 - 지원: https://brad-k-dev.github.io/gureum-jupjup/
 - 개인정보처리방침: https://brad-k-dev.github.io/gureum-jupjup/privacy.html
-- 문의: cloov2026@gmail.com
+- 문의: offtasklab@gmail.com
 
 앱 소스는 별도 저장소(`gureum_jupjup_ios`)에 있습니다.
